@@ -1,0 +1,22 @@
+[data-theme=light],
+:root:not([data-theme=dark]) {
+  color-scheme: light;
+  --background-color: #fc621f;
+  --primary: var(--background-color);
+  --primary-hover: var(--background-color);
+}
+@media only screen and (prefers-color-scheme: dark) {
+:root:not([data-theme=light]) {
+  color-scheme: dark;
+  --primary: #fc621f;
+  --primary-hover: var(--primary);
+
+}
+}
+[data-theme=dark] {
+  color-scheme: dark;
+  --background-color: #11191f;
+  --primary: #fc621f;
+  --primary-hover: var(--primary);
+
+}
